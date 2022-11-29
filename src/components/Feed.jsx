@@ -1,17 +1,30 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { fetchFromAPI } from '../utils/fetchFromAPI'
 import { Box, Stack, Typography } from '@mui/material'
-import Sidebar from "./SideBar"
+import { SideBar, Videos } from "./"
 
 const Feed = () => {
+  const [selectedCategory, setSelectedCategory] = useState('New');
+  
+  useEffect(() => {
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`);
+  }, []);
+
   return (
     <Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
       <Box sx={{ height: { sx: 'auto', md: '92vh' }, borderRight: '1px solid #3d3d3d', px: { sx: 0, md: 2 } }}>
-      <Sidebar />
-      <Typography className='copyright' variant="body2" sx={{ mt: 1.5, color: "#fff" }}>
-        Copyright 2022 AmitxParmar
-      </Typography>
+        <SideBar />
+        <Typography className='copyright' variant="body2" sx={{ mt: 1.5, color: "#fff" }}>
+          Copyright 2022 AmitxParmar
+        </Typography>
       </Box>
-      
+      <Box>
+        <Typography variant="h4" fontWeight="bold" mb={2} sx={{ color: 'white' }}>
+          New <span style={{ color: '#F31503' }}> videos!</span>
+        </Typography>
+        <Videos videos={[]} />
+      </Box>
+
     </Stack>
   )
 }
