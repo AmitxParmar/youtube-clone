@@ -2,7 +2,7 @@
 
 /////
 
-## Subheadig
+## Sub Heading
 
 ////
 
