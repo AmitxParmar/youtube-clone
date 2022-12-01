@@ -30,7 +30,7 @@ a {
     color: white !important;
 }
 
-.category-btn:hover span {
+.category-btn:hover span, a {
     color: white !important;
 }
 
