@@ -11,4 +11,4 @@ then change current directory to <cloned_folder_name>
 > **Install the modules using NPM or YARN.**
 
 ### `.env` 
-> **Replace the environment variable with yours, can get yours from Here**: https://rapidapi.com/Glavier/api/youtube138/
+> **Add the .env file in the root folder and assign the key recieved from the rapid api to "REACT_APP_RAPID_API_KEY = <Key>" Replace the <key> with yours, can get yours from Here**: https://rapidapi.com/Glavier/api/youtube138/
