@@ -1,5 +1,8 @@
 # **Youtube-Clone (using React.js, Youtube-API and Material-UI)**
 
+## Preview:
+ <img src="https://github.com/AmitxParmar/Youtube-Clone/blob/ee211c97a579edf7346586c560159855b8174bdb/Screenshot%202023-01-19%20162347.png" />
+
 ## Steps to Configure the Project:
 
 ### `Clone the Repository`
