@@ -1,4 +1,9 @@
-## `Youtube-Clone (using React.js, Youtube-API and Material-UI)`
+### `Youtube-Clone`:
+React.js, Youtube-API and Material-UI)
+
+* Developed a YouTube clone web application utilizing React and Material-UI for the front-end, and integrated the YouTube Data API to retrieve and display video information.
+* Implemented features such as a search bar, video player and channel details page. implemented responsive design for optimal user experience on all devices.
+
 
 ## Preview:
  <img src="https://github.com/AmitxParmar/Youtube-Clone/blob/ee211c97a579edf7346586c560159855b8174bdb/Screenshot%202023-01-19%20162347.png" />
